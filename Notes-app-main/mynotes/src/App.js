@@ -14,6 +14,7 @@ function App() {
     <Router>
       <div className="container dark">
         <div className="app">
+           <h1>Jenkins CI/CD Testing</h1>
         <Header />
         <Routes>
           <Route path='/' element={ <NotesListPage/> } />
