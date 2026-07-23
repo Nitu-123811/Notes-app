@@ -15,17 +15,6 @@ function App() {
       <div className="container dark">
         <div className="app">
 
-          <h1
-            style={{
-              color: "#f68657",
-              fontSize: "30px",
-              textAlign: "center",
-              padding: "10px"
-            }}
-          >
-            Jenkins CI/CD Testing 🚀
-          </h1>
-
           <Header />
 
           <Routes>
