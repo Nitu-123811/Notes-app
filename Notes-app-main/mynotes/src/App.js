@@ -14,12 +14,25 @@ function App() {
     <Router>
       <div className="container dark">
         <div className="app">
-           <h1>Jenkins CI/CD Testing</h1>
-        <Header />
-        <Routes>
-          <Route path='/' element={ <NotesListPage/> } />
-          <Route path='/note/:id' element={ <NotePage/> } />
-        </Routes>
+
+          <h1
+            style={{
+              color: "#f68657",
+              fontSize: "30px",
+              textAlign: "center",
+              padding: "10px"
+            }}
+          >
+            Jenkins CI/CD Testing 🚀
+          </h1>
+
+          <Header />
+
+          <Routes>
+            <Route path="/" element={<NotesListPage />} />
+            <Route path="/note/:id" element={<NotePage />} />
+          </Routes>
+
         </div>
       </div>
     </Router>
