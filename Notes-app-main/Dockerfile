@@ -1,4 +1,3 @@
-# React build stage
 FROM node:20 AS frontend
 
 WORKDIR /app/frontend
@@ -12,7 +11,6 @@ COPY mynotes .
 RUN npm run build
 
 
-# Django stage
 FROM python:3.9
 
 WORKDIR /app/backend
@@ -28,7 +26,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-# React build copy
 COPY --from=frontend /app/frontend/build ./mynotes/build
 
 EXPOSE 8000
